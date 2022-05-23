@@ -11,7 +11,7 @@
     @scroll.window.throttle.60ms="if(window.scrollY < 300) { stuckToTop = true; } else { stuckToTop = false; }">
     <div class="flex justify-between px-default md:px-0 pb-4">
         <div>
-            <a href="/"><img src="/static/img/logo.svg" class="block" :class="stuckToTop ? '': 'max-w-[120px]'" /></a>
+            <a href="/"><img src="/static/img/logo.svg" aria-label="Homepage" alt="" class="block" :class="stuckToTop ? '': 'max-w-[120px]'" /></a>
         </div>
         <button 
             class="block md:hidden" 
