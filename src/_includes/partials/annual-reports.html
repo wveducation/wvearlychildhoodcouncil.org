@@ -1,0 +1,11 @@
+<section class="text-white">
+    <h1 class="text-center text-white">Annual Reports</h1>
+    <p class="text-lg">{{ annual_reports.description }}</p>
+    {% if annual_reports.files %}
+    <ul>
+    {% for file in annual_reports.files %}
+        <li class="mb-2"><a href="{{ file.url }}">{{ file.name }}</a></li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+</section>

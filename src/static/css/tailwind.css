@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Type */
+
+body {
+  @apply font-body;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply text-brand_black font-display mb-3;
+}
+
+h1 {
+  @apply text-4xl font-light tracking-tighter;
+}
+
+h2 {
+  @apply text-3xl;
+}
+
+h3 {
+  @apply text-2xl font-bold;
+}
+
+img {
+  @apply rounded-md overflow-hidden;
+}
+
+/* Forms */
+
+input {
+  @apply font-body text-brand_black px-4 py-2 rounded-sm border border-brand_black;
+}
+
+input[type=submit] {
+  @apply cursor-pointer text-white;
+}
+
+p {
+  @apply mb-4;
+}
+
+a {
+  @apply underline;
+}

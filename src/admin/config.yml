@@ -1,0 +1,87 @@
+backend:
+  # Use netlify identity as backend
+  name: git-gateway
+  branch: master
+  ### enable below lines for github integration ###
+  # name: github
+  # repo: surjithctly/neat-starter
+media_folder: "src/static"
+public_folder: "/static"
+
+# Please run "npx netlify-cms-proxy-server" for local backend
+local_backend: true
+# publish_mode: editorial_workflow
+collections:
+
+  - label: "Members"
+    label_singular: "Member"
+    name: "members"
+    files:
+      - label: "Council Membership"
+        name: council_members
+        file: "src/_data/council_members.yaml"
+        fields:
+          - label: "Data"
+            name: data
+            widget: list
+            allow_add: true
+            collapsed: true
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Agency", name: "agency", widget: "string", required: false }
+              - { label: "Title", name: "title", widget: "string", required: false }
+              - { label: "Designation", name: "designation", widget: "string", required: false }
+              - { label: "Email", name: "email", widget: "string", required: false }
+  
+  - label: "Blocks"
+    label_singular: "Block"
+    name: "blocks"
+    files:
+      - label: "Goals"
+        name: "goals"
+        file: "src/_data/goals.yaml"
+        fields:
+          - label: "Goals"
+            name: goals
+            widget: list
+            allow_add: true
+            collapsed: true
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Body", name: body, widget: markdown }
+
+      - label: "Meeting Minutes"
+        name: meeting_minutes
+        file: "src/_data/meeting_minutes.yaml"
+        fields:
+          - { label: "Description", name: "description", widget: "text" }
+          - label: "Files"
+            name: files
+            widget: list
+            allow_add: true
+            collapsed: true
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - label: "File"
+                name: "url"
+                widget: "file"
+                media_library:
+                  choose_url: false
+
+      - label: "Annual Reports"
+        name: annual_reports
+        file: "src/_data/annual_reports.yaml"
+        fields:
+          - { label: "Description", name: "description", widget: "text" }
+          - label: "Files"
+            name: files
+            widget: list
+            allow_add: true
+            collapsed: true
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - label: "File"
+                name: "url"
+                widget: "file"
+                media_library:
+                  choose_url: false

@@ -1,0 +1,18 @@
+<section x-data="{ activeItem: 1 }" class="py-16 bg-[#F4F6F8] scroll-mt-32" id="goals">
+    <div class="container max-w-5xl">
+        <div class="block flex mb-12 px-default overflow-x-scroll">
+            {% for tab in goals.goals %}
+            <button @click="activeItem = {{ loop.index }}" 
+            class="inline-block w-full px-6 py-4 text-center whitespace-nowrap font-display text-white text-2xl bg-[#48A0B1] hover:bg-[#4EABC6] border-l-2 border-[#4397B2]"
+            :class="activeItem == {{ loop.index }} ? 'bg-[#4EABC6]' : ''">{{ tab.title }}</button>
+            {% endfor %}
+        </div>
+        <div class="px-default">
+            {% for tab in goals.goals %}
+            <section x-show="activeItem == {{ loop.index }}" class="text-lg markdown">
+                {{ tab.body | markdown | safe }}
+            </section>
+            {% endfor %}
+        </div>
+    </div>
+</section>

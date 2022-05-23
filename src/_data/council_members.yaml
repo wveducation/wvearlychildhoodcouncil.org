@@ -1,0 +1,106 @@
+data:
+  - name: Hawley Carlson
+    agency: Volunteer West Virginia
+    title: Executive Director
+    designation: Chair, Ex-Officio, Non-Voting
+
+  - name: Lisa M. Ertl
+    agency: Office of Programs and Resource Development, Bureau for Children and Families, WVDHHR
+    title: Deputy Commissioner
+    designation: Executive Committee, Designee of the WV DHHR
+
+  - name: Monica DellaMea
+    agency: WVDE Office of Early & Elementary Learning
+    title: Executive Director, WVDE Office of Early & Elementary Learning
+    designation: Executive Committee, Designee of the WV Superintendent of Schools
+
+  - name: Brittany Doss
+    agency: Division of Early Care and Education
+    title: WV Head Start State Collaboration Director
+    designation: Executive Committee, WV Head Start Collaboration Director
+
+  - name: Kaitlyn Comer
+    designation: Local Education Agency Representative
+
+  - name: Jennifer Pendland
+    agency: West Virginia Higher Education Policy Commission
+    designation: Institutions of Higher Education Representative
+
+  - name: Jeanette Barker
+    agency: Playmates Preschools and Child Development Centers
+    title: Executive Director
+    designation: Local Early Child Care Provider Representative
+
+  - name: Lori Milam
+    agency: WV Head Start Association
+    title: Executive Director
+    designation: Head Start Agency Representative
+
+  - name: Karen Browning
+    agency: Case West Virginia
+    title: Head Start Director
+    designation: Early Head Start Program Representative
+
+  - name: Pamela Roush
+    agency: WVDHHR
+    title: Director, WV Birth to Three
+    designation: WV Birth to Three Representative
+
+  - name: Jackie Newson
+    agency: Office of Maternal, Child and Family Health
+    title: Director, West Virginia Home Visitation Program
+    designation: In-Home Family Visitation Representative
+
+  - name: Randall Reid Smith
+    agency: Department of Arts, Culture, and History
+    title: Curator
+    designation: Governor's Office Representative
+
+  - name: Philip Keith
+    agency: Appalachian Council, AFL-CIO
+    title: Executive Director
+    designation: Labor Representative
+
+  - name: Mary 'Mitzi' Payne
+    agency: Marshall University
+    title: Neurologist, Cabell Huntington Hospital
+    designation: Pediatric Medical Community Representative
+
+  - name: Kathy Baker
+    agency: Private Childcare
+    title: Director
+    designation: Family Childcare Representative
+
+  - name: Dwight Coburn
+    agency: Southwest Community Action Agency
+    title: Executive Director
+    designation: Local Head Start Program Representative
+
+  - name: Margaret O' Neal
+    agency: United Way of Central West Virginia
+    title: CEO and President
+    designation: Local Service and Funding Agency Representative
+
+  - name: Laurie McKeown
+    agency: Team for WV's Children
+    title: Executive Director
+    designation: Early Childhood Advocate Community Representative
+
+  - name: Sammy Gray
+    designation: Business Community Representative
+
+  - name: Lisa Fisher
+    agency: WVDE Office of Early and Elementary Learning
+    title: Coordinator
+    designation: Section 619 of the IDEA Representative
+    email: lmray@k12.wv.us
+
+  - name: Jim Jeffries
+    title: Director
+    designation: Director, Office of Maternal Child and Family Health, Bureau for Public Health, Department of Health and Human Resources
+
+  - name: Nancy Hanna
+    agency: Greenbrier County Schools
+    title: Assistant Superintendent for Curriculum and Instruction
+    designation: Local Education Agencies
+

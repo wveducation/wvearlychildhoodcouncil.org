@@ -1,0 +1,25 @@
+<section class="py-16 bg-[#DCE3EA] scroll-mt-32" id="council">
+    <div class="container px-default">
+        <h1 class="mb-12">Council Membership</h1>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-default">
+        {% for member in council_members.data %}
+            <article class="bg-white p-6 py-12 text-lg">
+                <h1 class="text-center text-3xl text-[#004071]">{{ member.name }}</h1>
+                {% if member.agency %}
+                <div><span class="font-bold">Agency:</span> {{ member.agency }}</div>
+                {% endif %}
+                {% if member.title %}
+                <div><span class="font-bold">Title:</span> {{ member.title }}</div>
+                {% endif %}
+                {% if member.designation %}
+                <div><span class="font-bold">Designation from E.O.:</span> {{ member.designation }}</div>
+                {% endif %}
+                {% if member.email %}
+                <div><span class="font-bold">Email:</span> <a href="mailto:{{ member.email }}" class="underline">{{ member.email }}</a></div>
+                {% endif %}
+            </article>
+        {% endfor %}
+        </div>
+    </div>
+</section>

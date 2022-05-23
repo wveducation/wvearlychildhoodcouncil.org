@@ -1,0 +1,9 @@
+<section class="text-white">
+    <h1 class="text-center text-white">Meeting Minutes</h1>
+    <p class="text-lg">{{ meeting_minutes.description }}</p>
+    <ul>
+    {% for file in meeting_minutes.files %}
+        <li class="mb-2"><a href="{{ file.url }}">{{ file.name }}</a></li>
+    {% endfor %}
+    </ul>
+</section>
