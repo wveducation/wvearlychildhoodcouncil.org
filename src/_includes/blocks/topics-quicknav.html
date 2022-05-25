@@ -1,0 +1,9 @@
+<ul class="flex flex-wrap gap-x-default gap-y-2">
+{% for topic in collections.topics | sortByKeys(topics_order.settings.topics) %}
+    <li>
+        <a href="#{{ topic.data.eleventyNavigation.key }}" class="no-underline hover:underline text-lg font-bold text-brand_blue">
+            {{ topic.data.title }}
+        </a>
+    </li>
+{% endfor %}
+</ul>

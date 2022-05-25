@@ -13,6 +13,65 @@ local_backend: true
 # publish_mode: editorial_workflow
 collections:
 
+  - label: "Topics"
+    label_singular: "Topic"
+    name: "topics"
+    folder: "src/topics"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "ID", name: "id", widget: "string", hint: "⚠️ Only alphanumeric, underscores and dashes allowed.", pattern: ['^[a-zA-Z0-9-_]+$', 'Only alphanumeric, dashes, and underscores allowed.'] }
+      - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      # - { label: "Backgroud Color", name: "bgColor", widget: "color", required: false }
+      # - { label: "Text Color", name: "textColor", widget: "color", required: false }
+      - label: "Resources"
+        label_singular: "Resource"
+        name: "resources"
+        widget: "list"
+        summary: '"{{fields.resource.title}}" from {{fields.resource.source}}'
+        fields:
+          - label: "Resource"
+            name: "resource"
+            widget: "object"
+            summary: "Test"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Source", name: "source", widget: "string" }
+      - label: "Navigation" # https://www.11ty.dev/docs/plugins/navigation/
+        name: "eleventyNavigation"
+        widget: "object"
+        collapsed: false
+        hint: "Influences sidebar navigation. Uses the [eleventy-navigation](https://www.11ty.dev/docs/plugins/navigation/) plugin."
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Key", name: "key", widget: "string", hint: "This is a machine-name for this page. This should be unique, lowercase, no-spaces (use - or _ ), and never change (do not edit once set).", pattern: ['^[a-zA-Z0-9-_]+$', 'Only alphanumeric, dashes, and underscores allowed.'] }
+          - { 
+            label: "Parent", 
+            name: "parent", 
+            required: false,
+            widget: "relation", 
+            collection: "pages",
+            search_fields: ["title"],
+            value_field: "eleventyNavigation.key",
+            display_fields: ["{{title}} [{{eleventyNavigation.key}}]"]
+          }
+          - { label: "Order", name: "order", widget: "number", default: 0, value_type: "int" }
+
+  # - label: "Resources"
+  #   label_singular: "Resource"
+  #   name: "resources"
+  #   folder: "src/resources"
+  #   create: true
+  #   fields:
+  #     - { lable: "Title", name: "title", widget: "string" }
+  #     - { lable: "URL", name: "url", widget: "string" }
+  #     - { label: "Source", name: "source", widget: "string" }
+  #     - { label: "Topic", name: "", widget: "relation" }
+
   - label: "Members"
     label_singular: "Member"
     name: "members"
@@ -20,6 +79,8 @@ collections:
       - label: "Council Membership"
         name: council_members
         file: "src/_data/council_members.yaml"
+        editor:
+          preview: false
         fields:
           - label: "Data"
             name: data
@@ -32,7 +93,7 @@ collections:
               - { label: "Title", name: "title", widget: "string", required: false }
               - { label: "Designation", name: "designation", widget: "string", required: false }
               - { label: "Email", name: "email", widget: "string", required: false }
-  
+
   - label: "Blocks"
     label_singular: "Block"
     name: "blocks"
@@ -85,3 +146,20 @@ collections:
                 widget: "file"
                 media_library:
                   choose_url: false
+
+  - label: "Settings"
+    label_singular: "Setting"
+    name: "settings"
+    files:
+      - label: "Topics Order"
+        name: "topics_order"
+        file: "src/_data/topics_order.settings.yaml"
+        fields:
+          - label: "Topics"
+            name: topics
+            widget: relation
+            collection: "topics"
+            value_field: "id"
+            multiple: true
+            search_fields: ["title"]
+            display_fields: ["title"]

@@ -1,0 +1,9 @@
+{% switch params.theme %}
+{% case 'light' %}
+    {% set themeClasses = 'bg-white text-brand_blue hover:text-[#02587c]' %}
+{% case 'light_bordered' %}
+    {% set themeClasses = 'bg-white text-brand_blue shadow-[inset_0_0_0_1px_rgb(0,123,175,0.4)] hover:shadow-[inset_0_0_0_1px_rgb(0,123,175,0.9)]' %}
+{% case default %}
+    {% set themeClasses = 'bg-brand_blue text-white hover:bg-[#02587c]' %}
+{% endswitch %}
+<a href="{{ params.url }}" class="inline-block px-4 py-2 no-underline rounded-full text-md font-bold {{ themeClasses }}">{{ params.text }}</a>

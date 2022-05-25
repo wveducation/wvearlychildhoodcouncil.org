@@ -1,0 +1,8 @@
+<article class="relative p-4 hover:bg-brand_blue/10 rounded-lg">
+    <h1 class="mb-0 leading-[0.4em]">
+        <a href="{{ params.url }}" class="no-underline text-lg md:text-2xl font-bold text-brand_blue tracking-tight" tabindex="-1">{{ params.title }}</a>
+        <span class="material-icons relative top-[3px] -left-[2px] !text-[0.5em] text-brand_blue">open_in_new</span>
+    </h1>
+    <div class="text-md">from {{ params.source }}</div>
+    <a href="{{ params.url }}" aria-label="{{ params.title }}" target="_blank" class="absolute inset-0 no-underline"></a>
+</article>
