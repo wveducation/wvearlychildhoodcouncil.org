@@ -697,9 +697,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(72 160 177 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#4EABC6\] {
+.bg-\[\#43909f\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(78 171 198 / var(--tw-bg-opacity));
+  background-color: rgb(67 144 159 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#DCE3EA\] {
@@ -707,9 +707,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(220 227 234 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#539151\] {
+.bg-\[\#498147\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(83 145 81 / var(--tw-bg-opacity));
+  background-color: rgb(73 129 71 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#333\] {
@@ -938,9 +938,9 @@ a {
   background-color: rgb(53 186 242 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-\[\#4EABC6\]:hover {
+.hover\:bg-\[\#43909f\]:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(78 171 198 / var(--tw-bg-opacity));
+  background-color: rgb(67 144 159 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 768px) {
