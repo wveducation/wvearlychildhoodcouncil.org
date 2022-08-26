@@ -1,5 +1,5 @@
 <article class="py-8 {{ params.classes }}" id="{{ params.key }}">
-    <h1 class="font-display font-bold text-3xl">{{ params.title }}</h1>
+    <h1 class="mb-6 font-display font-bold text-3xl">{{ params.title }}</h1>
     <div class="grid md:grid-cols-2 gap-x-4 lg:gap-x-8">
         <section class="mb-default rounded-lg overflow-hidden border border-[rgba(0,0,0,0.2)]">
             <h2 class="sr-only">Summary</h2>
@@ -13,7 +13,8 @@
                 <p class="text-lg">{{ params.summary }}</p>
                 {{ component('button', {
                     text: 'Learn More',
-                    url: params.url
+                    url: params.url,
+                    aria_label: 'Learn more about ' + params.title
                 }) }}
             </div>
         </section>

@@ -7,8 +7,8 @@
         {% set positionClasses = 'left-0 bottom-[3rem]' %}
 {% endswitch %}
 <section class="relative bg-[#efefef]">
-    <div class="relative container">
-        <img class="object-cover w-[100%] aspect-[1/1] md:aspect-[4/2]" src="https://via.placeholder.com/1200x600" alt="">
+    <div class="relative container max-w-[80rem]">
+        <img class="object-cover rounded-none w-[100%] aspect-[1/1] md:aspect-[4/2]" src="https://via.placeholder.com/1200x600" alt="">
         <div class="md:absolute {{ positionClasses }} p-6 md:w-heroCaptionWidth bg-[{{ params.text.backgroundColor }}]">
             <h1 class="text-[{{ params.text.textColor }}]">{{ params.text.title }}</h1>
             <p class="text-lg text-[{{ params.text.textColor }}]">{{ params.text.subtitle }}</p>

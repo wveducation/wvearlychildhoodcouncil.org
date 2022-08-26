@@ -6,4 +6,6 @@
 {% case default %}
     {% set themeClasses = 'bg-brand_blue text-white hover:bg-[#02587c]' %}
 {% endswitch %}
-<a href="{{ params.url }}" class="inline-block px-4 py-2 no-underline rounded-full text-md font-bold {{ themeClasses }}">{{ params.text }}</a>
+<a href="{{ params.url }}" 
+class="inline-block px-4 py-2 no-underline rounded-full text-md font-bold {{ themeClasses }}" 
+aria-label="{{ params.aria_label }}">{{ params.text }}</a>

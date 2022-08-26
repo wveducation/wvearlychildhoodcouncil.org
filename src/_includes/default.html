@@ -42,7 +42,9 @@
   <body class="bg-white">
     {% include 'partials/header.html' %}
 
-    {{ content | safe }}
+    <main>
+      {{ content | safe }}
+    </main>
 
     {% include 'partials/footer.html' %}
 
