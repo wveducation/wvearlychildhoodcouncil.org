@@ -17,21 +17,21 @@ subtitle: Hello World
 <article>
     <header class="bg-[#F8F6F3] py-12">
         <div class="container max-w-lg px-default">
-            <div class="block md:grid grid-cols-2 gap-x-24">
-                <div class="flex flex-col justify-center">
+            <div class="block lg:grid lg:grid-cols-5 gap-x-24">
+                <div class="lg:col-span-2 flex flex-col justify-center text-center lg:text-left">
                     <h1 class="font-display font-bold">{{ title }}</h1>
                     {% if summary %}
                     <div class="text-lg md:text-2xl mb-8 markdown-field">{{ summary | markdown | safe }}</div>
                     {% endif %}
                 </div>
-                <div>
-                    <img src="https://via.placeholder.com/600x400" alt="">
+                <div class="lg:col-span-3 md:-mb-20">
+                    <img src="https://via.placeholder.com/1200x700" alt="">
                 </div>
             </div>
         </div>
     </header>
 
-    <div class="py-12">
+    <div class="py-12 pt-20">
     <div class="container max-w-[50rem] px-default">
         <div class="block  gap-x-24">
             <div class="col-span-2">

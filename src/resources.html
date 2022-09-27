@@ -23,16 +23,19 @@ eleventyNavigation:
             <h1 class="text-white text-5xl font-bold tracking-normal">{{ title }}</h1>
         </div>
     </header>
-    <div class="py-12 bg-tan">
-        <div class="container max-w-lg px-default">
-            <h2 class="font-bold text-xl">Browse by Topic</h2>
+    <div class="md:sticky top-0 z-[99] bg-tan border-b border-[rgba(0,0,0,0.1)]">
+        <div class="container max-w-lg px-default py-6">
+            <h2 class="font-bold text-xl">Learn By Topic</h2>
             {% include 'blocks/topics-quicknav.html' %}
         </div>
     </div>
     <div class="container max-w-lg px-default">
         {% for topic in collections.topics | sortByKeys(topics_order.settings.topics) %}
-        <article class="py-12" id="{{ topic.data.id }}">
-            <h1 class="text-3xl">{{ topic.data.title }}</h1>
+        <section class="py-12" id="{{ topic.data.id }}">
+            <header class="flex gap-x-6 items-baseline">
+                <h1 class="text-3xl">{{ topic.data.title }}</h1>
+                <div><a href="{{ topic.data.page.url }}" class="text-brand_blue font-bold no-underline hover:underline" aria-label="Read more about {{ topic.data.title }}">Learn More</a></div>
+            </header>
             {% if topic.data.resources %}
             <div class="-ml-4 grid md:grid-cols-2 gap-x-4">
             {% for item in topic.data.resources %}
@@ -45,7 +48,7 @@ eleventyNavigation:
             {% endfor %}
             </div>
             {% endif %}
-        </article>
+        </section>
         {% endfor %}
     </div>
 </section>

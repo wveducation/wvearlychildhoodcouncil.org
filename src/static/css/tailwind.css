@@ -70,3 +70,8 @@ a {
 .longform li {
   @apply mb-4;
 }
+
+.longform li ul,
+.longform li ol {
+  @apply mt-4;
+}
