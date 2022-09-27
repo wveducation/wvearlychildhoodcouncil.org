@@ -1,0 +1,44 @@
+<article class="py-8 {{ params.classes }}" id="{{ params.key }}">
+    <h1 class="mb-6 font-display font-bold text-3xl">{{ params.title }}</h1>
+    <div class="grid md:grid-cols-2 gap-x-4 lg:gap-x-8">
+        <section class="mb-default rounded-lg overflow-hidden border border-[rgba(0,0,0,0.2)]">
+            <h2 class="sr-only">Summary</h2>
+            <div class="relative">
+                <a href="{{ params.url }}" aria-label="Learn More about {{ params.title }}">
+                    <img src="https://via.placeholder.com/600x400" class="rounded-none aspect-[16/9]" alt="">
+                </a>
+                <!-- <div class="absolute bottom-0 left-0 w-full h-[20%] bg-gradient-to-t from-[{{ params.bgColor }}] to-transparent"></div> -->
+            </div>
+            <div class="p-6">
+                <p class="text-lg">{{ params.summary }}</p>
+                {{ component('button', {
+                    text: 'Learn More',
+                    url: params.url,
+                    aria_label: 'Learn more about ' + params.title
+                }) }}
+            </div>
+        </section>
+        <div>
+            <h2 class="font-display font-bold text-xl px-4">Resources</h2>
+            {% if params.resources %}
+            {% for item in params.resources | limit(3) %}
+                {{ component('resource-link', {
+                    data: item.resource,
+                    title: item.resource.title,
+                    source: item.resource.source,
+                    url: item.resource.url
+                }) }}
+            {% endfor %}
+            {% else %}
+            <div class="px-4 text-lg">Sorry, there are no resources for this topic yet.</div>
+            {% endif %}
+            <div class="px-4 pt-4">
+                {{ component('button', {
+                    text: 'More Resources',
+                    url: '/first-1000-days/resources' + '#' + params.key,
+                    theme: 'light_bordered'
+                }) }}
+            </div>
+        </div>
+    </div>
+</article>

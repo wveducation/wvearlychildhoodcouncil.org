@@ -1,0 +1,22 @@
+<div class="">
+    <div class="md:sticky top-0 z-[99] bg-tan border-b border-[rgba(0,0,0,0.1)]">
+        <div class="container max-w-lg px-default py-6">
+            <h2 class="font-bold text-2xl">Learn By Topic</h2>
+            {% include 'blocks/topics-quicknav.html' %}
+        </div>
+    </div>
+    <div class="container max-w-lg px-default">
+    {% for topic in collections.topics | sortByKeys(topics_order.settings.topics) %}
+        {{ component('topic-teaser', {
+            title: topic.data.title,
+            key: topic.data.eleventyNavigation.key,
+            summary: topic.data.summary,
+            url: topic.url,
+            resources: topic.data.resources,
+            bgColor: topic.data.bgColor,
+            textColor: topic.data.textColor,
+            classes: 'md:scroll-mt-[7rem]'
+        }) }}
+    {% endfor %}
+    </div>
+</div>

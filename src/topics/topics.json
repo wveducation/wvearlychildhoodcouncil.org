@@ -1,0 +1,10 @@
+{
+    "layout": "topic-page",
+    "permalink": "/first-1000-days/topics/{{ page.fileSlug }}/",
+    "tags": [
+        "topics"
+    ],
+    "eleventyNavigation": {
+        "parent": "first-1000-days"
+    }
+}

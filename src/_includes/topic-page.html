@@ -1,0 +1,63 @@
+---
+layout: default
+container: true
+title: Default Title
+subtitle: Hello World
+---
+{%- from "system/component.html" import component -%}
+
+<div class="py-6 bg-[#2A6B8F] text-white">
+    <div class="container max-w-lg px-default">
+        {{ component('breadcrumbs', {
+            items: collections.all | eleventyNavigationBreadcrumb(eleventyNavigation.key, { includeSelf: true })
+        }) }}
+    </div>
+</div>
+
+<article>
+    <header class="bg-[#F8F6F3] py-12">
+        <div class="container max-w-lg px-default">
+            <div class="block lg:grid lg:grid-cols-5 gap-x-24">
+                <div class="lg:col-span-2 flex flex-col justify-center text-center lg:text-left">
+                    <h1 class="font-display font-bold">{{ title }}</h1>
+                    {% if summary %}
+                    <div class="text-lg md:text-2xl mb-8 markdown-field">{{ summary | markdown | safe }}</div>
+                    {% endif %}
+                </div>
+                <div class="lg:col-span-3 md:-mb-20">
+                    <img src="https://via.placeholder.com/1200x700" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="py-12 pt-20">
+    <div class="container max-w-[50rem] px-default">
+        <div class="block  gap-x-24">
+            <div class="col-span-2">
+                <div class="longform">
+                    {{ content | safe }}
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</article>
+
+<aside class="py-12 border-t border-[rgba(0,0,0,0.2)]">
+    <section>
+        <div class="container max-w-lg px-default">
+            <h1>Resources</h1>
+            <div class="-ml-4 grid md:grid-cols-2 gap-x-4">
+            {% for item in resources %}
+                {{ component('resource-link', {
+                    data: item.resource,
+                    title: item.resource.title,
+                    source: item.resource.source,
+                    url: item.resource.url
+                }) }}
+            {% endfor %}
+            </div>
+        </div>
+    </section>
+</aside>

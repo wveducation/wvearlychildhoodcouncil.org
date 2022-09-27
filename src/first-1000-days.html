@@ -1,0 +1,25 @@
+---
+layout: default
+title: First 1000 Days
+path: home
+description: 'The 1,000 days from pregnancy to age two offer a crucial window of opportunity to create brighter, healthier futures.'
+eleventyNavigation:
+  order: 0
+  title: First 1000 Days
+  key: first-1000-days
+---
+{%- from "system/component.html" import component -%}
+
+{{ component('hero-banner', {
+    text: {
+        title: title,
+        subtitle: description,
+        textColor: '#ffffff',
+        backgroundColor: '#377373',
+        position: 'left'
+    }
+}) }}
+
+{% include 'blocks/save-the-children-ad.html' %}
+
+{% include 'blocks/topic-summaries.html' %}

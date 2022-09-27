@@ -1,0 +1,12 @@
+<div class="relative">
+    <ul class="flex flex-wrap md:flex-nowrap gap-x-default gap-y-2 md:overflow-x-auto md:pr-[2rem]">
+        {% for topic in collections.topics | sortByKeys(topics_order.settings.topics) %}
+        <li class="md:whitespace-nowrap">
+            <a href="#{{ topic.data.eleventyNavigation.key }}" class="no-underline hover:underline text-lg font-bold text-brand_blue">
+                {{ topic.data.title }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+    <div class="block md:visible absolute right-0 bottom-0 h-full w-[2rem] bg-gradient-to-l from-[white] to-transparent"></div>
+</div>

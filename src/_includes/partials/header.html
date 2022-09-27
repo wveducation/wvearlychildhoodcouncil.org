@@ -5,7 +5,7 @@
     { title: 'Resources', url: '/#resources' },
     { title: 'Contact Us', url: '/#contact' }
 ] %}
-<header class="relative top-0 md:sticky flex flex-col md:flex-row pt-4 md:pb-4 md:px-default bg-white drop-shadow-sm" 
+<header class="relative z-50 top-0 flex flex-col md:flex-row pt-4 md:pb-4 md:px-default bg-white drop-shadow-sm" 
     x-data="{ mobileNavState: false, stuckToTop: null }"
     x-init="if(window.scrollY < 300) { stuckToTop = true; } else { stuckToTop = false; }"
     @scroll.window.throttle.60ms="if(window.scrollY < 300) { stuckToTop = true; } else { stuckToTop = false; }">

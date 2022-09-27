@@ -9,11 +9,11 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  @apply text-brand_black font-display mb-3;
+  @apply font-bold text-brand_black font-display mb-3;
 }
 
 h1 {
-  @apply text-4xl font-light tracking-tighter;
+  @apply text-4xl;
 }
 
 h2 {
@@ -21,7 +21,7 @@ h2 {
 }
 
 h3 {
-  @apply text-2xl font-bold;
+  @apply text-2xl;
 }
 
 img {
@@ -44,4 +44,34 @@ p {
 
 a {
   @apply underline;
+}
+
+/* Longform Formatting */
+.longform {
+  @apply text-2xl leading-normal;
+}
+
+.longform h1,
+.longform h2,
+.longform h3,
+.longform h4,
+.longform h5 {
+  @apply mt-12 mb-6;
+}
+
+.longform p {
+  @apply mb-6;
+}
+
+.longform ul {
+  @apply mb-6 pl-8 list-disc;
+}
+
+.longform li {
+  @apply mb-4;
+}
+
+.longform li ul,
+.longform li ol {
+  @apply mt-4;
 }

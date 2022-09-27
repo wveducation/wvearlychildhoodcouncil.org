@@ -4,6 +4,7 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
 const markdownIt = require('markdown-it');
 const util = require('util');
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 module.exports = function (eleventyConfig) {
   // Disable automatic use of your .gitignore
@@ -11,6 +12,9 @@ module.exports = function (eleventyConfig) {
 
   // Merge data instead of overriding
   eleventyConfig.setDataDeepMerge(true);
+
+  // Plugin for Eleventy Navigation
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   // human readable date
   eleventyConfig.addFilter("readableDate", (dateObj) => {
@@ -35,6 +39,22 @@ module.exports = function (eleventyConfig) {
     return str.replace(char, replacement);
   });
 
+  // Filters and sorts items by a sorting array (order)
+  eleventyConfig.addFilter('sortByKeys', (items, order) => {
+    const data = [...items]; // prevents mutation of collection
+    return data.filter((item) => {
+      if (order.includes(item.data.id)) {
+        return true;
+      }
+      return false;
+    }).sort((a, b) => order.indexOf(a.data.id) - order.indexOf(b.data.id));
+  });
+
+  // Limit to a number of top results
+  eleventyConfig.addFilter('limit', (items, quantity) => {
+    const data = [...items]; // prevents mutation of collection
+    return data.slice(0, quantity);
+  });
 
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}` );
 
