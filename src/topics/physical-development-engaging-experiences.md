@@ -1,7 +1,10 @@
 ---
 title: Physical Development and Engaging Experiences
 id: physical-development
-summary: Movement and engaging experiences build a young child’s healthy body and strong brain connections. Young children need to have opportunities to cross the midline, which is the middle of the child’s body from head to feet.
+summary: Movement and engaging experiences build a young child’s healthy body
+  and strong brain connections. Young children need to have opportunities to
+  cross the midline, which is the middle of the child’s body from head to feet.
+thumbnail: /static/img/CH1664965_Aubree,_2,_ESSS_-_South_Carolina,_2022.jpg
 resources:
   - resource:
       title: American Academy of Pediatrics
@@ -20,8 +23,9 @@ resources:
       source: University of Nevada, Reno
       url: https://extension.unr.edu/publication.aspx?PubID=2921
   - resource:
-      title: "From Rolling Over to Jumping in Puddles: Moving and Grooving with Infants and Toddlers"
-      source: "National Association for the Education of Young Children"
+      title: "From Rolling Over to Jumping in Puddles: Moving and Grooving with
+        Infants and Toddlers"
+      source: National Association for the Education of Young Children
       url: https://www.naeyc.org/resources/blog/moving-and-grooving-infants-and-toddlers
   - resource:
       title: Tummy Time

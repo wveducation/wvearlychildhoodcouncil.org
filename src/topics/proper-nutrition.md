@@ -1,27 +1,28 @@
 ---
 title: Proper Nutrition
 id: proper-nutrition
-summary: "Baby brain development depends on proper nutrition even before birth to make neural connections. Pre-birth nutrition is dependent upon the mother's diet."
-eleventyNavigation:
-  title: Proper Nutrition
-  key: proper-nutrition
-  order: 0
+summary: Baby brain development depends on proper nutrition even before birth to
+  make neural connections. Pre-birth nutrition is dependent upon the mother's
+  diet.
+thumbnail: /static/img/CH1694249_SNAP_Outreach_-_Batesville,_AR_2022.jpg
 resources:
   - resource:
       title: Building Brains
       source: 1,000 Days
       url: https://thousanddays.org/why-1000-days/building-brains/
   - resource:
-      title: "Nutrition in the First 1,000 Days: A Foundation for Brain Development and Learning"
+      title: "Nutrition in the First 1,000 Days: A Foundation for Brain Development
+        and Learning"
       source: 1,000 Days
       url: https://thousanddays.org/wp-content/uploads/1000Days-Nutrition_Brief_Brain-Think_Babies_FINAL.pdf
   - resource:
-      title: "The Role of Nutrition in Brain Development: The Golden Opportunity of the \"First 1000 Days\""
+      title: 'The Role of Nutrition in Brain Development: The Golden Opportunity of
+        the "First 1000 Days"'
       source: National Library of Medicine
       url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4981537/
   - resource:
       title: "Preventing childhood obesity: What parents should know"
-      source: "Children’s Health of Orange County"
+      source: Children’s Health of Orange County
       url: https://health.choc.org/preventing-childhood-obesity-what-parents-should-know/
   - resource:
       title: KEYS 4 HealthyKids
@@ -35,6 +36,10 @@ resources:
       title: What brain foods should kids eat?
       source: Medical News Today
       url: https://www.medicalnewstoday.com/articles/brain-food-for-kids
+eleventyNavigation:
+  title: Proper Nutrition
+  key: proper-nutrition
+  order: 0
 ---
 * Young children need proper nutrition to support strong brain development before birth and in the first three years. 
 * The correct nutrients are in foods rich in protein, iron, zinc, calcium, fiber, and essential vitamins.  

@@ -24,6 +24,7 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "ID", name: "id", widget: "string", hint: "⚠️ Only alphanumeric, underscores and dashes allowed.", pattern: ['^[a-zA-Z0-9-_]+$', 'Only alphanumeric, dashes, and underscores allowed.'] }
       - { label: "Summary", name: "summary", widget: "text" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image", media_folder: "/src/static/img", public_folder: '/static/img' }
       - { label: "Body", name: "body", widget: "markdown" }
       - label: "Resources"
         label_singular: "Resource"
@@ -96,6 +97,14 @@ collections:
     label_singular: "Block"
     name: "blocks"
     files:
+      - label: "Hero: 1000 Days"
+        name: "hero_1000_days"
+        file: "src/_data/hero_1000_days.yaml"
+        fields:
+          - { label: "Title", name: title, widget: "text" }
+          - { label: "Caption", name: caption, widget: "text" }
+          - { label: "Featured Image", name: image, widget: image, media_folder: "/src/static/img", public_folder: "/static/img" }
+
       - label: "Goals"
         name: "goals"
         file: "src/_data/goals.yaml"

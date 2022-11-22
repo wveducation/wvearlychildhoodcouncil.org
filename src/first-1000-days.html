@@ -11,9 +11,10 @@ eleventyNavigation:
 {%- from "system/component.html" import component -%}
 
 {{ component('hero-banner', {
+    image: hero_1000_days.image,
     text: {
-        title: title,
-        subtitle: description,
+        title: hero_1000_days.title,
+        subtitle: hero_1000_days.caption,
         textColor: '#ffffff',
         backgroundColor: '#377373',
         position: 'left'

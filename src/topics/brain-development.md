@@ -1,12 +1,14 @@
 ---
 title: Brain Development
 id: brain-development
-summary: "The first one thousand days of a child's life are critically important because their brains are growing and developing rapidly."
+summary: The first one thousand days of a child's life are critically important
+  because their brains are growing and developing rapidly.
+thumbnail: /static/img/CH1426589_Case_Study_Elsa,_2_-_West_Virginia.jpg
 resources:
   - resource:
-      title: Why Early Childhood Matters - Brain Development 
+      title: Why Early Childhood Matters - Brain Development
       source: First Things First
-      url: https://www.firstthingsfirst.org/early-childhood-matters/brain-development/ 
+      url: https://www.firstthingsfirst.org/early-childhood-matters/brain-development/
   - resource:
       title: Brain Architecture
       source: Center on the Developing Child, Harvard University
@@ -25,7 +27,7 @@ resources:
       url: https://www.unicef-irc.org/article/958-the-first-1000-days-of-life-the-brains-window-of-opportunity.html
   - resource:
       title: A Million Reasons to Learn About Baby Brain Development.
-      source: Zero to Three 
+      source: Zero to Three
       url: https://www.zerotothree.org/resources/1893-a-million-reasons-to-learn-about-baby-brain-development
   - resource:
       title: "Magic of Everyday Moments: Brain Wonder"
