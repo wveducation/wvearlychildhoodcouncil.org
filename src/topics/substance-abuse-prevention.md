@@ -2,6 +2,7 @@
 title: Substance Abuse Prevention
 id: substance-abuse-prevention
 summary: Substance abuse affects countless children across communities in West Virginia. Substance use during pregnancy, breastfeeding, and parenting can profoundly affect a child’s development.
+thumbnail: /static/img/heart-hands-pregnant.jpg
 resources:
   - resource:
       title: "ACEs and Toxic Stress: Frequently Asked Questions"
