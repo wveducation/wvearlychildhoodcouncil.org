@@ -661,12 +661,12 @@ video {
   margin-left: -1rem;
 }
 
-.mb-0 {
-  margin-bottom: 0px;
-}
-
 .mb-default {
   margin-bottom: 1.5rem;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
 }
 
 .mb-8 {
@@ -1139,10 +1139,6 @@ video {
   font-weight: 700;
 }
 
-.font-normal {
-  font-weight: 400;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
@@ -1185,11 +1181,6 @@ video {
 .text-\[\#ffffff\] {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\#DA291C\] {
-  --tw-text-opacity: 1;
-  color: rgb(218 41 28 / var(--tw-text-opacity));
 }
 
 .underline {
