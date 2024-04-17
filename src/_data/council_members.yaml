@@ -9,9 +9,9 @@ data:
     title: Deputy Commissioner
     designation: Executive Committee, Designee of the WV DHHR
 
-  - name: Monica DellaMea
-    agency: WVDE Office of Early & Elementary Learning
-    title: Executive Director, WVDE Office of Early & Elementary Learning
+  - name: Janet Bock-Hager
+    agency: West Virginia Department of Education
+    title: Coordinator, Office of PK-12 Academic Support
     designation: Executive Committee, Designee of the WV Superintendent of Schools
 
   - name: Brittany Doss
@@ -22,7 +22,7 @@ data:
   - name: Kaitlyn Comer
     designation: Local Education Agency Representative
 
-  - name: Jennifer Penland
+  - name: Vacant
     agency: West Virginia Higher Education Policy Commission
     designation: Institutions of Higher Education Representative
 
@@ -41,7 +41,7 @@ data:
     title: Head Start Director
     designation: Early Head Start Program Representative
 
-  - name: Pamela Roush
+  - name: Mel Woodcock
     agency: WVDHHR
     title: Director, WV Birth to Three
     designation: WV Birth to Three Representative
@@ -61,9 +61,9 @@ data:
     title: Executive Director
     designation: Labor Representative
 
-  - name: Mary 'Mitzi' Payne
-    agency: Marshall University
-    title: Neurologist, Cabell Huntington Hospital
+  - name: Vacant
+    agency: 
+    title: 
     designation: Pediatric Medical Community Representative
 
   - name: Kathy Baker
@@ -86,7 +86,8 @@ data:
     title: Executive Director
     designation: Early Childhood Advocate Community Representative
 
-  - name: Sammy Gray
+  - name: Crystal Price
+    title: Clinical Director, Mountain Care Network
     designation: Business Community Representative
 
   - name: Lisa Fisher
